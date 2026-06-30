@@ -319,9 +319,89 @@ button {
 }
 
 .promo-modal .primary-button,
-.promo-modal .text-button {
+.promo-modal .secondary-button {
   width: 100%;
   margin-top: 0.55rem;
+}
+
+.promo-secondary-button {
+  min-height: 2.7rem;
+}
+
+.banner-carousel {
+  position: relative;
+  margin: 0.4rem 0 1.6rem;
+}
+
+.banner-slide {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 13.5rem;
+  overflow: hidden;
+  border: 0;
+  border-radius: 8px;
+  padding: 0;
+  background: #111;
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 16px 44px rgba(32, 29, 24, 0.18);
+}
+
+.banner-slide img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.78;
+}
+
+.banner-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 13.5rem;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0.45rem;
+  padding: 1rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.72));
+}
+
+.banner-overlay strong {
+  max-width: 20rem;
+  font-size: 1.55rem;
+  line-height: 1.15;
+}
+
+.banner-overlay > span:last-child {
+  max-width: 28rem;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.55;
+}
+
+.banner-dots {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  z-index: 2;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.banner-dots button {
+  width: 0.56rem;
+  height: 0.56rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.banner-dots button.active {
+  width: 1.35rem;
+  background: #fff;
 }
 
 .cart-drawer {

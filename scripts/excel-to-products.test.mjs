@@ -59,6 +59,18 @@ describe('rowsToCatalog', () => {
           buttonText: '查看推荐方案',
         },
       ],
+      banners: [
+        {
+          id: 'hotel-promo',
+          title: '酒店空间香氛方案',
+          subtitle: '让客户一进门就记住你的空间气味',
+          image: '/images/banners/hotel-lobby.jpg',
+          linkType: 'scenario',
+          targetId: 'hotel',
+          sortOrder: 1,
+          enabled: 'TRUE',
+        },
+      ],
     });
 
     expect(catalog.settings.giftStepLiters).toBe(3);
@@ -71,5 +83,15 @@ describe('rowsToCatalog', () => {
     });
     expect(catalog.machines[0].isGiftMachine).toBe(true);
     expect(catalog.packages[0].machineItems).toEqual([{ machineId: 'gas-501f', quantity: 1 }]);
+    expect(catalog.banners[0]).toEqual({
+      id: 'hotel-promo',
+      title: '酒店空间香氛方案',
+      subtitle: '让客户一进门就记住你的空间气味',
+      image: '/images/banners/hotel-lobby.jpg',
+      linkType: 'scenario',
+      targetId: 'hotel',
+      sortOrder: 1,
+      enabled: true,
+    });
   });
 });

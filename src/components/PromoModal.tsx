@@ -17,10 +17,10 @@ export function PromoModal({ promotion, onClose }: PromoModalProps) {
         <h2 id="promo-title">{promotion.title}</h2>
         <p>{promotion.body}</p>
         <button className="primary-button" type="button" onClick={onClose}>
-          {promotion.buttonText}
-        </button>
-        <button className="text-button" type="button" onClick={onClose}>
           先看看首页
+        </button>
+        <button className="secondary-button promo-secondary-button" type="button" onClick={onClose}>
+          {promotion.buttonText}
         </button>
       </div>
     </div>

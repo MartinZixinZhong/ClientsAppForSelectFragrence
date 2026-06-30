@@ -74,6 +74,16 @@ export function rowsToCatalog(rows) {
       subtitle: String(row.subtitle),
       sortOrder: Number(row.sortOrder),
     })),
+    banners: (rows.banners ?? []).map((row) => ({
+      id: String(row.id),
+      title: String(row.title),
+      subtitle: String(row.subtitle),
+      image: String(row.image),
+      linkType: String(row.linkType || 'none'),
+      targetId: String(row.targetId || ''),
+      sortOrder: Number(row.sortOrder),
+      enabled: bool(row.enabled),
+    })),
     scents: rows.scents.map((row) => ({
       id: String(row.id),
       name: String(row.name),
@@ -125,6 +135,7 @@ export function readWorkbookToCatalog(sourcePath) {
     packages: sheetRows(workbook, 'packages'),
     settings: sheetRows(workbook, 'settings'),
     promotions: sheetRows(workbook, 'promotions'),
+    banners: sheetRows(workbook, 'banners'),
   });
 }
 

@@ -30,6 +30,62 @@
       "name": "会所 / SPA / 足浴",
       "subtitle": "放松、舒缓、停留感更强的香氛方案",
       "sortOrder": 3
+    },
+    {
+      "id": "showroom",
+      "name": "售楼处 / 展厅",
+      "subtitle": "提升来访体验和空间记忆点",
+      "sortOrder": 4
+    },
+    {
+      "id": "office",
+      "name": "办公室 / 商务空间",
+      "subtitle": "清爽、克制、适合长时间停留",
+      "sortOrder": 5
+    },
+    {
+      "id": "retail",
+      "name": "商场 / 零售门店",
+      "subtitle": "增强品牌识别和停留体验",
+      "sortOrder": 6
+    },
+    {
+      "id": "deodorizing",
+      "name": "卫生间 / 除味空间",
+      "subtitle": "强调除味、清洁感和持续扩散",
+      "sortOrder": 7
+    }
+  ],
+  "banners": [
+    {
+      "id": "hotel-promo",
+      "title": "酒店空间香氛方案",
+      "subtitle": "为大堂、走廊和客房公共区建立稳定香气记忆",
+      "image": "/images/banners/hotel-lobby.jpg",
+      "linkType": "scenario",
+      "targetId": "hotel",
+      "sortOrder": 1,
+      "enabled": true
+    },
+    {
+      "id": "entertainment-promo",
+      "title": "娱乐商业空间方案",
+      "subtitle": "适合 KTV、酒吧、台球和网咖的高扩散香氛配置",
+      "image": "/images/banners/entertainment.jpg",
+      "linkType": "scenario",
+      "targetId": "entertainment",
+      "sortOrder": 2,
+      "enabled": true
+    },
+    {
+      "id": "wellness-promo",
+      "title": "会所 SPA 舒缓方案",
+      "subtitle": "用柔和香气提升停留感和放松体验",
+      "image": "/images/banners/wellness.jpg",
+      "linkType": "scenario",
+      "targetId": "wellness",
+      "sortOrder": 3,
+      "enabled": true
     }
   ],
   "scents": [
@@ -74,6 +130,38 @@
       "toneNote": "果香 / 琥珀",
       "scenarioIds": [
         "entertainment"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "参考区间价"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "参考区间价"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "参考区间价"
+        }
+      ]
+    },
+    {
+      "id": "spa-calm",
+      "name": "静谧会所香",
+      "description": "柔和舒缓，适合会所、SPA 和足浴空间。",
+      "toneNote": "花香 / 木质",
+      "scenarioIds": [
+        "wellness"
       ],
       "isRecommended": true,
       "isRegularStock": true,
@@ -154,6 +242,22 @@
         {
           "machineId": "gas-501f",
           "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "wellness-calm",
+      "name": "会所 SPA 舒缓方案",
+      "scenarioId": "wellness",
+      "description": "适合会所、SPA、足浴等停留型空间的香氛方案。",
+      "scentIds": [
+        "spa-calm"
+      ],
+      "suggestedLiters": 3,
+      "machineItems": [
+        {
+          "machineId": "gas-501f",
+          "quantity": 1
         }
       ]
     }

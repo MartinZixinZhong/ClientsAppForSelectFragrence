@@ -1,4 +1,5 @@
 import type { Catalog, PackageOption, Scenario } from '../domain/types';
+import { BannerCarousel } from './BannerCarousel';
 
 interface HomeProps {
   catalog: Catalog;
@@ -14,6 +15,20 @@ export function Home({ catalog, onSelectScenario, onAddPackage }: HomeProps) {
         <h1>为商业空间匹配香型与扩香设备</h1>
         <p>按场景推荐常备香型、参考区间价与扩香机配置，最终报价以询价确认为准。</p>
       </section>
+
+      <BannerCarousel
+        banners={catalog.banners}
+        onSelectTarget={(banner) => {
+          if (banner.linkType !== 'scenario') {
+            return;
+          }
+
+          const scenario = catalog.scenarios.find((item) => item.id === banner.targetId);
+          if (scenario) {
+            onSelectScenario(scenario);
+          }
+        }}
+      />
 
       <section className="section">
         <div className="section-heading">

@@ -62,6 +62,17 @@ export interface Promotion {
   buttonText: string;
 }
 
+export interface Banner {
+  id: string;
+  title: string;
+  subtitle: string;
+  image: string;
+  linkType: 'scenario' | 'package' | 'none';
+  targetId: string;
+  sortOrder: number;
+  enabled: boolean;
+}
+
 export interface Settings {
   brandName: string;
   brandSubtitle: string;
@@ -74,6 +85,7 @@ export interface Catalog {
   settings: Settings;
   promotion: Promotion;
   scenarios: Scenario[];
+  banners: Banner[];
   scents: Scent[];
   machines: Machine[];
   packages: PackageOption[];

@@ -12,6 +12,7 @@ const catalog = {
   },
   promotion: { enabled: true, title: '近期大促', body: '活动', buttonText: '查看推荐方案' },
   scenarios: [{ id: 'hotel', name: '酒店 / 大堂 / 走廊', subtitle: '酒店场景', sortOrder: 1 }],
+  banners: [],
   scents: [
     {
       id: 'white-tea-hotel',

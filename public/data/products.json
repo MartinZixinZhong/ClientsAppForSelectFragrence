@@ -1,0 +1,161 @@
+{
+  "settings": {
+    "brandName": "GlassMartin",
+    "brandSubtitle": "澳洲品牌 · 空间香氛服务",
+    "giftStepLiters": 3,
+    "giftMachineId": "gas-501f",
+    "finalQuoteNotice": "最终报价以 GlassMartin 确认方案为准。"
+  },
+  "promotion": {
+    "enabled": true,
+    "title": "近期大促",
+    "body": "采购满指定金额/升数，可赠送 GAS-501F 插电蓝牙 APP 款扩香机。",
+    "buttonText": "查看推荐方案"
+  },
+  "scenarios": [
+    {
+      "id": "hotel",
+      "name": "酒店 / 大堂 / 走廊",
+      "subtitle": "稳重、干净、留香稳定的常备香型",
+      "sortOrder": 1
+    },
+    {
+      "id": "entertainment",
+      "name": "KTV / 酒吧 / 台球 / 网咖",
+      "subtitle": "扩散明显，适合高人流娱乐商业空间",
+      "sortOrder": 2
+    },
+    {
+      "id": "wellness",
+      "name": "会所 / SPA / 足浴",
+      "subtitle": "放松、舒缓、停留感更强的香氛方案",
+      "sortOrder": 3
+    }
+  ],
+  "scents": [
+    {
+      "id": "white-tea-hotel",
+      "name": "白茶酒店香",
+      "description": "干净、柔和、适合酒店大堂和走廊。",
+      "toneNote": "茶香 / 木质",
+      "scenarioIds": [
+        "hotel",
+        "office",
+        "showroom"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "参考区间价"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "参考区间价"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "参考区间价"
+        }
+      ]
+    },
+    {
+      "id": "night-club-energy",
+      "name": "活力娱乐场景香",
+      "description": "扩散明显，适合 KTV、酒吧、台球和网咖空间。",
+      "toneNote": "果香 / 琥珀",
+      "scenarioIds": [
+        "entertainment"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "参考区间价"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "参考区间价"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "参考区间价"
+        }
+      ]
+    }
+  ],
+  "machines": [
+    {
+      "id": "gas-501f",
+      "model": "GAS-501F",
+      "name": "GAS-501F 插电蓝牙 APP 款",
+      "image": "/images/machines/gas-501f.jpg",
+      "coverageText": "适用于中小型商业空间",
+      "sellingPoints": [
+        "插电使用",
+        "蓝牙连接",
+        "APP 控制"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "office",
+        "retail",
+        "showroom"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": true
+    }
+  ],
+  "packages": [
+    {
+      "id": "hotel-basic",
+      "name": "酒店大堂基础方案",
+      "scenarioId": "hotel",
+      "description": "适合酒店大堂、走廊等公共区域的基础询价方案。",
+      "scentIds": [
+        "white-tea-hotel"
+      ],
+      "suggestedLiters": 5,
+      "machineItems": [
+        {
+          "machineId": "gas-501f",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "entertainment-regular",
+      "name": "娱乐空间常备方案",
+      "scenarioId": "entertainment",
+      "description": "适合 KTV、酒吧、台球、网咖等空间的常备询价方案。",
+      "scentIds": [
+        "night-club-energy"
+      ],
+      "suggestedLiters": 6,
+      "machineItems": [
+        {
+          "machineId": "gas-501f",
+          "quantity": 2
+        }
+      ]
+    }
+  ]
+}

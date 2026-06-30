@@ -10,6 +10,41 @@ interface QuoteCartProps {
   onClose: () => void;
 }
 
+async function waitForImagesToSettle(container: HTMLElement, timeoutMs = 300) {
+  const images = Array.from(container.querySelectorAll('img'));
+
+  await Promise.all(
+    images.map(async (image) => {
+      if (image.complete) {
+        return;
+      }
+
+      await new Promise<void>((resolve) => {
+        const timeout = window.setTimeout(resolve, timeoutMs);
+        const settle = () => {
+          window.clearTimeout(timeout);
+          resolve();
+        };
+
+        image.addEventListener('load', settle, { once: true });
+        image.addEventListener('error', settle, { once: true });
+      });
+    }),
+  );
+}
+
+async function createCaptureNode(source: HTMLElement) {
+  const sourceCard = source.querySelector('.quote-image-card') ?? source;
+  const captureNode = document.createElement('div');
+  captureNode.className = 'quote-image-capture-stage';
+  captureNode.setAttribute('aria-hidden', 'true');
+  captureNode.appendChild(sourceCard.cloneNode(true));
+  document.body.appendChild(captureNode);
+  await waitForImagesToSettle(captureNode);
+
+  return captureNode;
+}
+
 export function QuoteCart({ cart, catalog, onClose }: QuoteCartProps) {
   const imageRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState(false);
@@ -25,11 +60,17 @@ export function QuoteCart({ cart, catalog, onClose }: QuoteCartProps) {
     if (!imageRef.current) {
       return;
     }
-    const dataUrl = await toPng(imageRef.current, { pixelRatio: 2 });
-    const link = document.createElement('a');
-    link.href = dataUrl;
-    link.download = 'glassmartin-inquiry.png';
-    link.click();
+    const captureNode = await createCaptureNode(imageRef.current);
+
+    try {
+      const dataUrl = await toPng(captureNode, { backgroundColor: '#ffffff', cacheBust: true, pixelRatio: 2 });
+      const link = document.createElement('a');
+      link.href = dataUrl;
+      link.download = 'glassmartin-inquiry.png';
+      link.click();
+    } finally {
+      captureNode.remove();
+    }
   }
 
   return (

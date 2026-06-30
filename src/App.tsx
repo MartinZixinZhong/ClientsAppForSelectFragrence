@@ -13,7 +13,7 @@ export function App() {
   const [error, setError] = useState('');
   const [showPromo, setShowPromo] = useState(true);
   const [showCart, setShowCart] = useState(false);
-  const [isHome, setIsHome] = useState(false);
+  const [isHome, setIsHome] = useState(true);
   const { cart, setScenario, setScentLiters, setMachineQuantity } = useQuoteCart();
 
   useEffect(() => {

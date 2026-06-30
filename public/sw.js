@@ -1,11 +1,15 @@
-const CACHE_NAME = 'glassmartin-aroma-v1';
+const CACHE_NAME = 'glassmartin-aroma-v2';
 const CORE_ASSETS = [
-  '/',
-  '/manifest.webmanifest',
-  '/data/products.json',
-  '/images/glassmartin-logo.jpg',
-  '/images/machines/gas-501f.jpg',
-];
+  './',
+  'manifest.webmanifest',
+  'data/products.json',
+  'icons/app-icon-192.png',
+  'icons/app-icon-512.png',
+  'icons/app-icon-maskable-512.png',
+  'icons/apple-touch-icon.png',
+  'images/glassmartin-logo.jpg',
+  'images/machines/gas-501f.jpg',
+].map((path) => new URL(path, self.registration.scope).toString());
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS)));

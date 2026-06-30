@@ -1,7 +1,16 @@
-import { render } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
+import { render, screen, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { QuoteCart } from './QuoteCart';
 import type { Catalog, QuoteCart as QuoteCartState } from '../domain/types';
+
+const toPngMock = vi.hoisted(() =>
+  vi.fn(async (_node: HTMLElement, _options?: Record<string, unknown>) => 'data:image/png;base64,glassmartin'),
+);
+
+vi.mock('html-to-image', () => ({
+  toPng: toPngMock,
+}));
 
 const catalog: Catalog = {
   settings: {
@@ -44,6 +53,15 @@ const catalog: Catalog = {
 };
 
 describe('QuoteCart', () => {
+  beforeEach(() => {
+    toPngMock.mockClear();
+    vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(() => undefined);
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
   it('shows gift count based on total liters', () => {
     const cart: QuoteCartState = {
       scenarioId: 'hotel',
@@ -54,5 +72,25 @@ describe('QuoteCart', () => {
     const { container } = render(<QuoteCart cart={cart} catalog={catalog} onClose={vi.fn()} />);
 
     expect(container.querySelector('.gift-line')).toHaveTextContent('满赠扩香机：GAS-501F 插电蓝牙 APP 款 × 2 台');
+  });
+
+  it('captures a temporary on-page image node instead of the offscreen hidden source', async () => {
+    const cart: QuoteCartState = {
+      scenarioId: 'hotel',
+      scents: [{ scentId: 'white-tea-hotel', liters: 3 }],
+      machines: [],
+    };
+
+    render(<QuoteCart cart={cart} catalog={catalog} onClose={vi.fn()} />);
+
+    await userEvent.click(screen.getByRole('button', { name: '生成图片' }));
+
+    await waitFor(() => expect(toPngMock).toHaveBeenCalledTimes(1));
+    const capturedNode = toPngMock.mock.calls[0]?.[0] as HTMLElement;
+
+    expect(capturedNode).toHaveClass('quote-image-capture-stage');
+    expect(capturedNode).not.toHaveClass('quote-image-hidden');
+    expect(capturedNode.textContent).toContain('空间香氛服务询价清单');
+    expect(document.querySelector('.quote-image-capture-stage')).not.toBeInTheDocument();
   });
 });

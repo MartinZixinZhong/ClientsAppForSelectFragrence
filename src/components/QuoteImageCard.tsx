@@ -1,5 +1,6 @@
 import type { QuoteSummary } from '../domain/quote';
 import type { Catalog } from '../domain/types';
+import { withBasePath } from '../utils/staticAsset';
 
 interface QuoteImageCardProps {
   catalog: Catalog;
@@ -10,7 +11,7 @@ export function QuoteImageCard({ catalog, summary }: QuoteImageCardProps) {
   return (
     <div className="quote-image-card">
       <div className="quote-image-brand">
-        <img src="/images/glassmartin-logo.jpg" alt="GlassMartin" />
+        <img src={withBasePath('/images/glassmartin-logo.jpg')} alt="GlassMartin" />
         <div>
           <strong>{catalog.settings.brandName}</strong>
           <span>{catalog.settings.brandSubtitle}</span>

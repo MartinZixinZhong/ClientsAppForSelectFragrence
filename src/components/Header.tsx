@@ -1,3 +1,5 @@
+import { withBasePath } from '../utils/staticAsset';
+
 interface HeaderProps {
   brandName: string;
   brandSubtitle: string;
@@ -9,7 +11,7 @@ export function Header({ brandName, brandSubtitle, cartCount, onOpenCart }: Head
   return (
     <header className="app-header">
       <div className="brand-lockup">
-        <img src="/images/glassmartin-logo.jpg" alt={brandName} />
+        <img src={withBasePath('/images/glassmartin-logo.jpg')} alt={brandName} />
         <div>
           <strong>{brandName}</strong>
           <span>{brandSubtitle}</span>

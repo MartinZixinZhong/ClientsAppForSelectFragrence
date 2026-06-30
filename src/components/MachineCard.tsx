@@ -1,4 +1,5 @@
 import type { Machine } from '../domain/types';
+import { withBasePath } from '../utils/staticAsset';
 
 interface MachineCardProps {
   machine: Machine;
@@ -9,7 +10,7 @@ interface MachineCardProps {
 export function MachineCard({ machine, quantity, onChangeQuantity }: MachineCardProps) {
   return (
     <article className="machine-card">
-      <img src={machine.image} alt={machine.name} />
+      <img src={withBasePath(machine.image)} alt={machine.name} />
       <div className="card-main">
         <span className="pill">{machine.model}</span>
         <h3>{machine.name}</h3>

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Banner } from '../domain/types';
+import { withBasePath } from '../utils/staticAsset';
 
 interface BannerCarouselProps {
   banners: Banner[];
@@ -34,7 +35,7 @@ export function BannerCarousel({ banners, onSelectTarget }: BannerCarouselProps)
   return (
     <section className="banner-carousel" role="region" aria-label="品牌广告轮播">
       <button className="banner-slide" type="button" onClick={() => onSelectTarget(activeBanner)}>
-        <img src={activeBanner.image} alt={activeBanner.title} />
+        <img src={withBasePath(activeBanner.image)} alt={activeBanner.title} />
         <span className="banner-overlay">
           <span className="eyebrow">GlassMartin Campaign</span>
           <strong>{activeBanner.title}</strong>

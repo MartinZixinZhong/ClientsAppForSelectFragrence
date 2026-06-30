@@ -131,6 +131,38 @@ button {
   font-size: 1.18rem;
 }
 
+.scenario-tabs {
+  position: sticky;
+  top: 4.35rem;
+  z-index: 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+  margin: 0.3rem 0 1rem;
+  padding: 0.35rem;
+  border: 1px solid #e0d5c3;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 34px rgba(32, 29, 24, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.scenario-tabs button {
+  min-height: 2.8rem;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #6c6257;
+  font-size: 0.92rem;
+  font-weight: 850;
+}
+
+.scenario-tabs button.active {
+  background: #171717;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(23, 23, 23, 0.18);
+}
+
 .card-grid,
 .package-list {
   display: grid;
@@ -234,6 +266,18 @@ button {
   background: #f7f1e6;
   color: #5d5348;
   font-size: 0.78rem;
+}
+
+.gift-reminder {
+  margin: 0.65rem 0 0.7rem;
+  border: 1px solid #d2ad62;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fff7df, #f3e3bd);
+  padding: 0.65rem 0.75rem;
+  color: #65460c;
+  font-size: 0.9rem;
+  font-weight: 900;
+  line-height: 1.45;
 }
 
 .field {

@@ -8,7 +8,7 @@
   },
   "promotion": {
     "enabled": true,
-    "title": "近期大促",
+    "title": "3L香薰送高端扩香机",
     "body": "采购满指定金额/升数，可赠送 GAS-501F 插电蓝牙 APP 款扩香机。",
     "buttonText": "查看推荐方案"
   },
@@ -106,7 +106,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051802",
@@ -125,7 +144,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥304/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥274/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051803",
@@ -144,7 +182,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥304/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥274/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051804",
@@ -163,7 +220,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051805",
@@ -182,45 +258,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
-    },
-    {
-      "id": "gm051806",
-      "name": "栀子花 / Gardenia",
-      "description": "酒店系列精油，编号 GM051806。明细气味：栀子花、茉莉、绿叶 / Gardenia, Jasmine, Green Leaves。",
-      "toneNote": "白花调 / White Floral",
-      "scenarioIds": [
-        "hotel",
-        "entertainment",
-        "wellness",
-        "showroom",
-        "office",
-        "retail",
-        "deodorizing"
-      ],
-      "isRecommended": true,
-      "isRegularStock": true,
-      "isInquiryOnly": false,
-      "priceTiers": []
-    },
-    {
-      "id": "gm051807",
-      "name": "秋梨苍兰 / Autumn Pear & Freesia",
-      "description": "酒店系列精油，编号 GM051807。明细气味：梨、小苍兰、玫瑰 / Pear, Freesia, Rose。",
-      "toneNote": "果香花香调 / Fruity Floral",
-      "scenarioIds": [
-        "hotel",
-        "entertainment",
-        "wellness",
-        "showroom",
-        "office",
-        "retail",
-        "deodorizing"
-      ],
-      "isRecommended": true,
-      "isRegularStock": true,
-      "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051808",
@@ -239,7 +296,102 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
+    },
+    {
+      "id": "gm051806",
+      "name": "栀子花 / Gardenia",
+      "description": "酒店系列精油，编号 GM051806。明细气味：栀子花、茉莉、绿叶 / Gardenia, Jasmine, Green Leaves。",
+      "toneNote": "白花调 / White Floral",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥189/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥169/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
+    },
+    {
+      "id": "gm051807",
+      "name": "秋梨苍兰 / Autumn Pear & Freesia",
+      "description": "酒店系列精油，编号 GM051807。明细气味：梨、小苍兰、玫瑰 / Pear, Freesia, Rose。",
+      "toneNote": "果香花香调 / Fruity Floral",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥304/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥274/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051809",
@@ -258,7 +410,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥189/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥169/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051810",
@@ -277,7 +448,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051811",
@@ -296,7 +486,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051812",
@@ -315,7 +524,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051813",
@@ -334,7 +562,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051814",
@@ -353,7 +600,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051815",
@@ -372,7 +638,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051816",
@@ -391,7 +676,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051817",
@@ -410,7 +714,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥189/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥169/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051818",
@@ -429,11 +752,30 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051819",
-      "name": "全季禅茶 / Zen Tea",
+      "name": "禅茶橙花 / Zen Tea",
       "description": "酒店系列精油，编号 GM051819。明细气味：香柠檬、绿茶、茉莉 / Bergamot, Green Tea, Jasmine。",
       "toneNote": "绿叶调 / Green",
       "scenarioIds": [
@@ -448,7 +790,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥189/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥169/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051820",
@@ -467,7 +828,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051821",
@@ -486,11 +866,30 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051822",
-      "name": "新香格里拉 / Shangri-La",
+      "name": "香格里拉 / Shangri-La",
       "description": "酒店系列精油，编号 GM051822。明细气味：佛手柑、白茶、兰花 / Bergamot, White Tea, Orchid。",
       "toneNote": "花香调 / Floral",
       "scenarioIds": [
@@ -505,30 +904,30 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
-    },
-    {
-      "id": "gm051823",
-      "name": "威斯汀 / Westin",
-      "description": "酒店系列精油，编号 GM051823。明细气味：茶、青柠、紫苏 / Tea, Lime, Perilla。",
-      "toneNote": "花香绿叶调 / Floral Green",
-      "scenarioIds": [
-        "hotel",
-        "entertainment",
-        "wellness",
-        "showroom",
-        "office",
-        "retail",
-        "deodorizing"
-      ],
-      "isRecommended": true,
-      "isRegularStock": true,
-      "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051824",
-      "name": "希尔顿国际 / Hilton",
+      "name": "希尔顿 / Hilton",
       "description": "酒店系列精油，编号 GM051824。明细气味：西柚、鸢尾、广藿香 / Grapefruit, Iris, Patchouli。",
       "toneNote": "花香柑橘调 / Floral Citrus",
       "scenarioIds": [
@@ -543,7 +942,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051825",
@@ -562,7 +980,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051826",
@@ -581,26 +1018,26 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
-    },
-    {
-      "id": "gm051827",
-      "name": "亚朵酒店 / ATOUR HOTEL",
-      "description": "酒店系列精油，编号 GM051827。明细气味：柑橘、雪松、广藿香 / Citrus, Cedar, Patchouli。",
-      "toneNote": "果香木质调 / Fruity Woody",
-      "scenarioIds": [
-        "hotel",
-        "entertainment",
-        "wellness",
-        "showroom",
-        "office",
-        "retail",
-        "deodorizing"
-      ],
-      "isRecommended": true,
-      "isRegularStock": true,
-      "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     },
     {
       "id": "gm051828",
@@ -619,31 +1056,217 @@
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": []
+      "priceTiers": [
+        {
+          "minLiters": 1,
+          "maxLiters": 3,
+          "label": "1-3L",
+          "referencePriceText": "¥237/L 起"
+        },
+        {
+          "minLiters": 4,
+          "maxLiters": 9,
+          "label": "4-9L",
+          "referencePriceText": "¥213/L 起"
+        },
+        {
+          "minLiters": 10,
+          "maxLiters": null,
+          "label": "10L+",
+          "referencePriceText": "联系客服确认"
+        }
+      ]
     }
   ],
   "machines": [
     {
-      "id": "gas-501f",
-      "model": "GAS-501F",
-      "name": "GAS-501F 插电蓝牙 APP 款",
-      "image": "/images/machines/gas-501f.jpg",
-      "coverageText": "适用于中小型商业空间",
+      "id": "gah-11p",
+      "model": "GAH-11P",
+      "name": "GAH-11P",
+      "image": "/images/machines/gah-11p.jpg",
+      "coverageText": "100m³",
       "sellingPoints": [
-        "插电使用",
-        "蓝牙连接",
-        "APP 控制"
+        "100mL容量",
+        "PP塑料机身",
+        "2W功率",
+        "DC 220V",
+        "噪音＜36dba",
+        "茶座安装",
+        "按键/蓝牙控制"
       ],
       "scenarioIds": [
         "hotel",
         "entertainment",
         "wellness",
+        "showroom",
         "office",
         "retail",
-        "showroom"
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
+    },
+    {
+      "id": "gas-501f",
+      "model": "GAS-501F",
+      "name": "GAS-501F 插电蓝牙 WiFi 4G 款",
+      "image": "/images/machines/gas-501f.jpg",
+      "coverageText": "300-500m³（带风扇）",
+      "sellingPoints": [
+        "400mL容量",
+        "PP塑料机身",
+        "8W功率",
+        "DC 12V",
+        "噪音＜42dba",
+        "平放/挂壁安装",
+        "按键/蓝牙/WiFi/4G控制"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
       ],
       "isRecommended": true,
       "isGiftMachine": true
+    },
+    {
+      "id": "hz-1201",
+      "model": "HZ-1201",
+      "name": "HZ-1201 立式智能遥控款",
+      "image": "/images/machines/hz-1201.jpg",
+      "coverageText": "300m³",
+      "sellingPoints": [
+        "120mL容量",
+        "铝合金机身",
+        "5W功率",
+        "DC 12V",
+        "噪音＜38dba",
+        "平放安装",
+        "智能遥控"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
+    },
+    {
+      "id": "gas-201f",
+      "model": "GAS-201F",
+      "name": "GAS-201F 吸顶挂壁蓝牙款",
+      "image": "/images/machines/gas-201f.jpg",
+      "coverageText": "300-500m³（带风扇）",
+      "sellingPoints": [
+        "350mL容量",
+        "PP塑料机身",
+        "8W功率",
+        "DC 12V",
+        "噪音＜42dba",
+        "吸顶/挂壁/导轨安装",
+        "蓝牙控制"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
+    },
+    {
+      "id": "gam-1001f",
+      "model": "GAM-1001F",
+      "name": "GAM-1001F 中区域外接蓝牙款",
+      "image": "/images/machines/gam-1001f.jpg",
+      "coverageText": "2000-3000m³（带风扇）",
+      "sellingPoints": [
+        "800mL容量",
+        "金属机身",
+        "14W功率",
+        "DC 12V",
+        "噪音＜42dba",
+        "平放/外接安装",
+        "触控按键/蓝牙控制"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
+    },
+    {
+      "id": "hz-5001",
+      "model": "HZ-5001",
+      "name": "HZ-5001 大区域外接按键款",
+      "image": "/images/machines/hz-5001.jpg",
+      "coverageText": "5000m³（带风扇）",
+      "sellingPoints": [
+        "500/1000mL容量",
+        "金属机身",
+        "26W功率",
+        "AC110V-220V",
+        "噪音＜45dba",
+        "平放/挂壁/外接安装",
+        "按键控制"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
+    },
+    {
+      "id": "gal-8000h",
+      "model": "GAL-8000H",
+      "name": "GAL-8000H 大区域蓝牙 WiFi 外接款",
+      "image": "/images/machines/gal-8000h.jpg",
+      "coverageText": "8000-10000m³",
+      "sellingPoints": [
+        "2L容量",
+        "金属机身",
+        "26W功率",
+        "AC110V-220V",
+        "噪音＜45dba",
+        "平放/挂壁/外接安装",
+        "触控按键/蓝牙/WiFi控制"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
     }
   ],
   "packages": [
@@ -654,13 +1277,13 @@
       "description": "适合酒店大堂、走廊等公共区域的基础询价方案。",
       "scentIds": [
         "gm051801",
-        "gm051808"
+        "gm051809"
       ],
-      "suggestedLiters": 5,
+      "suggestedLiters": 6,
       "machineItems": [
         {
           "machineId": "gas-501f",
-          "quantity": 1
+          "quantity": 2
         }
       ]
     },
@@ -671,7 +1294,7 @@
       "description": "适合 KTV、酒吧、台球、网咖等空间的常备询价方案。",
       "scentIds": [
         "gm051804",
-        "gm051818"
+        "gm051809"
       ],
       "suggestedLiters": 6,
       "machineItems": [
@@ -687,7 +1310,7 @@
       "scenarioId": "wellness",
       "description": "适合会所、SPA、足浴等停留型空间的香氛方案。",
       "scentIds": [
-        "gm051807",
+        "gm051802",
         "gm051813"
       ],
       "suggestedLiters": 3,

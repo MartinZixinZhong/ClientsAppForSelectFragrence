@@ -16,7 +16,7 @@ export function Header({ brandName, brandSubtitle, cartCount, onOpenCart }: Head
         </div>
       </div>
       <button className="cart-button" type="button" onClick={onOpenCart}>
-        清单 {cartCount}
+        采购清单 {cartCount}
       </button>
     </header>
   );

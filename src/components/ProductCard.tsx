@@ -22,6 +22,7 @@ export function ProductCard({ scent, liters, onChangeLiters }: ProductCardProps)
           </span>
         ))}
       </div>
+      <p className="gift-reminder">每满3L香薰精油赠送高端扩香机一台</p>
       <label className="field">
         采购升数
         <input

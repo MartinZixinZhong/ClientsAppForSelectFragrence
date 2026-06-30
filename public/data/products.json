@@ -90,102 +90,536 @@
   ],
   "scents": [
     {
-      "id": "white-tea-hotel",
-      "name": "白茶酒店香",
-      "description": "干净、柔和、适合酒店大堂和走廊。",
-      "toneNote": "茶香 / 木质",
+      "id": "gm051801",
+      "name": "威斯汀白茶 / Westin White Tea",
+      "description": "酒店系列精油，编号 GM051801。明细气味：白茶、佛手柑、雪松 / White Tea, Bergamot, Cedar。",
+      "toneNote": "茶香花香调 / Tea Floral",
       "scenarioIds": [
         "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
         "office",
-        "showroom"
+        "retail",
+        "deodorizing"
       ],
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": [
-        {
-          "minLiters": 1,
-          "maxLiters": 3,
-          "label": "1-3L",
-          "referencePriceText": "参考区间价"
-        },
-        {
-          "minLiters": 4,
-          "maxLiters": 9,
-          "label": "4-9L",
-          "referencePriceText": "参考区间价"
-        },
-        {
-          "minLiters": 10,
-          "maxLiters": null,
-          "label": "10L+",
-          "referencePriceText": "参考区间价"
-        }
-      ]
+      "priceTiers": []
     },
     {
-      "id": "night-club-energy",
-      "name": "活力娱乐场景香",
-      "description": "扩散明显，适合 KTV、酒吧、台球和网咖空间。",
-      "toneNote": "果香 / 琥珀",
+      "id": "gm051802",
+      "name": "桂花乌龙23 / Osmanthus Oolong 23",
+      "description": "酒店系列精油，编号 GM051802。明细气味：桂花、乌龙茶、蜜桃 / Osmanthus, Oolong Tea, Peach。",
+      "toneNote": "茶香花果调 / Tea Floral Fruity",
       "scenarioIds": [
-        "entertainment"
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
       ],
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": [
-        {
-          "minLiters": 1,
-          "maxLiters": 3,
-          "label": "1-3L",
-          "referencePriceText": "参考区间价"
-        },
-        {
-          "minLiters": 4,
-          "maxLiters": 9,
-          "label": "4-9L",
-          "referencePriceText": "参考区间价"
-        },
-        {
-          "minLiters": 10,
-          "maxLiters": null,
-          "label": "10L+",
-          "referencePriceText": "参考区间价"
-        }
-      ]
+      "priceTiers": []
     },
     {
-      "id": "spa-calm",
-      "name": "静谧会所香",
-      "description": "柔和舒缓，适合会所、SPA 和足浴空间。",
-      "toneNote": "花香 / 木质",
+      "id": "gm051803",
+      "name": "杜桑的回忆 / Memory of Do Son",
+      "description": "酒店系列精油，编号 GM051803。明细气味：晚香玉、橙花、麝香 / Tuberose, Orange Blossom, Musk。",
+      "toneNote": "白花木质调 / White Floral Woody",
       "scenarioIds": [
-        "wellness"
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
       ],
       "isRecommended": true,
       "isRegularStock": true,
       "isInquiryOnly": false,
-      "priceTiers": [
-        {
-          "minLiters": 1,
-          "maxLiters": 3,
-          "label": "1-3L",
-          "referencePriceText": "参考区间价"
-        },
-        {
-          "minLiters": 4,
-          "maxLiters": 9,
-          "label": "4-9L",
-          "referencePriceText": "参考区间价"
-        },
-        {
-          "minLiters": 10,
-          "maxLiters": null,
-          "label": "10L+",
-          "referencePriceText": "参考区间价"
-        }
-      ]
+      "priceTiers": []
+    },
+    {
+      "id": "gm051804",
+      "name": "蓝风铃 / Blue Bell",
+      "description": "酒店系列精油，编号 GM051804。明细气味：风铃草、柿子、白麝香 / Bluebell, Persimmon, White Musk。",
+      "toneNote": "花果清新调 / Fresh Floral Fruity",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051805",
+      "name": "海洋之风 / Ocean Breeze",
+      "description": "酒店系列精油，编号 GM051805。明细气味：海盐、柑橘、海风 / Sea Salt, Citrus, Marine Breeze。",
+      "toneNote": "海洋清新调 / Marine Fresh",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051806",
+      "name": "栀子花 / Gardenia",
+      "description": "酒店系列精油，编号 GM051806。明细气味：栀子花、茉莉、绿叶 / Gardenia, Jasmine, Green Leaves。",
+      "toneNote": "白花调 / White Floral",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051807",
+      "name": "秋梨苍兰 / Autumn Pear & Freesia",
+      "description": "酒店系列精油，编号 GM051807。明细气味：梨、小苍兰、玫瑰 / Pear, Freesia, Rose。",
+      "toneNote": "果香花香调 / Fruity Floral",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051808",
+      "name": "白茶 / White Tea",
+      "description": "酒店系列精油，编号 GM051808。明细气味：白茶、佛手柑、麝香 / White Tea, Bergamot, Musk。",
+      "toneNote": "茶香木质调 / Tea Woody",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051809",
+      "name": "深定白茶 / Serene White Tea",
+      "description": "酒店系列精油，编号 GM051809。明细气味：白茶、雪松、琥珀 / White Tea, Cedar, Amber。",
+      "toneNote": "茶香木质麝香调 / Tea Woody Musky",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051810",
+      "name": "龙井茶 / Longjing Tea",
+      "description": "酒店系列精油，编号 GM051810。明细气味：龙井茶、竹叶、茉莉 / Longjing Tea, Bamboo Leaf, Jasmine。",
+      "toneNote": "绿茶清香调 / Green Tea Fresh",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051811",
+      "name": "乌木沉香 / Ebony Agarwood",
+      "description": "酒店系列精油，编号 GM051811。明细气味：沉香、乌木、琥珀 / Agarwood, Ebony, Amber。",
+      "toneNote": "木质东方调 / Oriental Woody",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051812",
+      "name": "玫香金漾 / Rosy Golden Glow",
+      "description": "酒店系列精油，编号 GM051812。明细气味：玫瑰、金桂、麝香 / Rose, Golden Osmanthus, Musk。",
+      "toneNote": "花香琥珀调 / Floral Amber",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051813",
+      "name": "白桃乌龙 / White Peach Oolong",
+      "description": "酒店系列精油，编号 GM051813。明细气味：白桃、乌龙茶、茉莉 / White Peach, Oolong Tea, Jasmine。",
+      "toneNote": "茶香果香调 / Tea Fruity",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051814",
+      "name": "大地 / Terre",
+      "description": "酒店系列精油，编号 GM051814。明细气味：葡萄柚、雪松、广藿香 / Grapefruit, Cedar, Patchouli。",
+      "toneNote": "木质柑橘调 / Woody Citrus",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051815",
+      "name": "威尼斯人 / Venetian",
+      "description": "酒店系列精油，编号 GM051815。明细气味：橙花、海风、白麝香 / Neroli, Sea Breeze, White Musk。",
+      "toneNote": "水生花香调 / Aquatic Floral",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051816",
+      "name": "竹露煎茶 / Bamboo Dew Sencha",
+      "description": "酒店系列精油，编号 GM051816。明细气味：煎茶、竹叶、露水 / Sencha, Bamboo Leaf, Dew。",
+      "toneNote": "绿茶清香调 / Green Tea Fresh",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051817",
+      "name": "橙花 / Orange Blossom",
+      "description": "酒店系列精油，编号 GM051817。明细气味：橙花、苦橙叶、茉莉 / Orange Blossom, Petitgrain, Jasmine。",
+      "toneNote": "白花柑橘调 / White Floral Citrus",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051818",
+      "name": "蔚蓝 / Bleu",
+      "description": "酒店系列精油，编号 GM051818。明细气味：柑橘、海风、雪松 / Citrus, Sea Breeze, Cedar。",
+      "toneNote": "海洋木质调 / Marine Woody",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051819",
+      "name": "全季禅茶 / Zen Tea",
+      "description": "酒店系列精油，编号 GM051819。明细气味：香柠檬、绿茶、茉莉 / Bergamot, Green Tea, Jasmine。",
+      "toneNote": "绿叶调 / Green",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051820",
+      "name": "万豪国际 / Marriott",
+      "description": "酒店系列精油，编号 GM051820。明细气味：柑橘、紫罗兰、绿茶 / Citrus, Violet, Green Tea。",
+      "toneNote": "花香调 / Floral",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051821",
+      "name": "喜来登 / Sheraton",
+      "description": "酒店系列精油，编号 GM051821。明细气味：柠檬、罗勒、绿茶 / Lemon, Basil, Green Tea。",
+      "toneNote": "柑橘绿叶调 / Citrus Green",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051822",
+      "name": "新香格里拉 / Shangri-La",
+      "description": "酒店系列精油，编号 GM051822。明细气味：佛手柑、白茶、兰花 / Bergamot, White Tea, Orchid。",
+      "toneNote": "花香调 / Floral",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051823",
+      "name": "威斯汀 / Westin",
+      "description": "酒店系列精油，编号 GM051823。明细气味：茶、青柠、紫苏 / Tea, Lime, Perilla。",
+      "toneNote": "花香绿叶调 / Floral Green",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051824",
+      "name": "希尔顿国际 / Hilton",
+      "description": "酒店系列精油，编号 GM051824。明细气味：西柚、鸢尾、广藿香 / Grapefruit, Iris, Patchouli。",
+      "toneNote": "花香柑橘调 / Floral Citrus",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051825",
+      "name": "洲际酒店 / Intercontinental",
+      "description": "酒店系列精油，编号 GM051825。明细气味：柑橘、姜、橙花 / Citrus, Ginger, Orange Flower。",
+      "toneNote": "绿叶花香调 / Floral Green",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051826",
+      "name": "皇冠假日 / Crowne Plaza",
+      "description": "酒店系列精油，编号 GM051826。明细气味：青柠、雪瓜、玫瑰 / Lime, Melon, Rose。",
+      "toneNote": "花香果香调 / Floral Fruity",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051827",
+      "name": "亚朵酒店 / ATOUR HOTEL",
+      "description": "酒店系列精油，编号 GM051827。明细气味：柑橘、雪松、广藿香 / Citrus, Cedar, Patchouli。",
+      "toneNote": "果香木质调 / Fruity Woody",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
+    },
+    {
+      "id": "gm051828",
+      "name": "四季酒店 / Four Seasons",
+      "description": "酒店系列精油，编号 GM051828。明细气味：香柠檬、玫瑰木、紫罗兰 / Bergamot, Rosewood, Violet。",
+      "toneNote": "花香调 / Floral",
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isRegularStock": true,
+      "isInquiryOnly": false,
+      "priceTiers": []
     }
   ],
   "machines": [
@@ -219,7 +653,8 @@
       "scenarioId": "hotel",
       "description": "适合酒店大堂、走廊等公共区域的基础询价方案。",
       "scentIds": [
-        "white-tea-hotel"
+        "gm051801",
+        "gm051808"
       ],
       "suggestedLiters": 5,
       "machineItems": [
@@ -235,7 +670,8 @@
       "scenarioId": "entertainment",
       "description": "适合 KTV、酒吧、台球、网咖等空间的常备询价方案。",
       "scentIds": [
-        "night-club-energy"
+        "gm051804",
+        "gm051818"
       ],
       "suggestedLiters": 6,
       "machineItems": [
@@ -251,7 +687,8 @@
       "scenarioId": "wellness",
       "description": "适合会所、SPA、足浴等停留型空间的香氛方案。",
       "scentIds": [
-        "spa-calm"
+        "gm051807",
+        "gm051813"
       ],
       "suggestedLiters": 3,
       "machineItems": [

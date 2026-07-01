@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
+import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = process.cwd();
@@ -59,6 +60,18 @@ export function buildWechatMiniProgram({ root = ROOT } = {}) {
   copyDirectory(sourceImagesPath, path.join(miniProgramRoot, 'assets/images'));
   if (fs.existsSync(miniProgramLogoPath)) {
     fs.copyFileSync(miniProgramLogoPath, path.join(miniProgramRoot, 'assets/images/glassmartin-logo.jpg'));
+  }
+  if (process.platform === 'win32' && process.env.SKIP_WECHAT_IMAGE_OPTIMIZE !== 'true') {
+    const optimizerPath = path.join(root, 'scripts/Optimize-WechatImages.ps1');
+    const result = spawnSync(
+      'powershell.exe',
+      ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', optimizerPath, path.join(miniProgramRoot, 'assets/images')],
+      { encoding: 'utf8' },
+    );
+
+    if (result.status !== 0) {
+      throw new Error(`Failed to optimize WeChat images: ${result.stderr || result.stdout}`);
+    }
   }
 
   return catalog;

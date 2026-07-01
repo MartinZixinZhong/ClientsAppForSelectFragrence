@@ -26,7 +26,9 @@ npm.cmd run wechat:sync
 
 1. 从 Excel 生成网页数据：`public/data/products.json`
 2. 生成小程序数据：`wechat-miniprogram/data/products.js`
-3. 同步小程序图片：`wechat-miniprogram/assets/images`
+3. 同步并压缩小程序图片：`wechat-miniprogram/assets/images`
+
+小程序图片会被压缩到适合手机展示的尺寸，避免微信开发者工具预览时超过 2MB 主包限制。
 
 ## 小程序专用 Logo
 

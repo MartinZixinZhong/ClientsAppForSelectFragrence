@@ -18,7 +18,10 @@ function writeFile(filePath, content) {
 }
 
 describe('buildWechatMiniProgram', () => {
+  const originalSkipOptimize = process.env.SKIP_WECHAT_IMAGE_OPTIMIZE;
+
   afterEach(() => {
+    process.env.SKIP_WECHAT_IMAGE_OPTIMIZE = originalSkipOptimize;
     for (const root of tempRoots.splice(0)) {
       fs.rmSync(root, { force: true, recursive: true });
     }
@@ -53,6 +56,7 @@ describe('buildWechatMiniProgram', () => {
     writeFile(path.join(root, 'public/images/glassmartin-logo.jpg'), 'logo');
     writeFile(path.join(root, 'public/images/banners/hotel-lobby.jpg'), 'banner');
     writeFile(path.join(root, 'public/images/machines/gas-501f.jpg'), 'machine');
+    process.env.SKIP_WECHAT_IMAGE_OPTIMIZE = 'true';
 
     buildWechatMiniProgram({ root });
 

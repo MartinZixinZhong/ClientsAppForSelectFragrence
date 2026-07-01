@@ -4,6 +4,22 @@ import { describe, expect, it } from 'vitest';
 
 const root = process.cwd();
 const miniRoot = path.join(root, 'wechat-miniprogram');
+const PREVIEW_SOURCE_LIMIT_BYTES = 2 * 1024 * 1024;
+
+function sumFileBytes(directory) {
+  let total = 0;
+
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const entryPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) {
+      total += sumFileBytes(entryPath);
+    } else {
+      total += fs.statSync(entryPath).size;
+    }
+  }
+
+  return total;
+}
 
 describe('wechat miniprogram structure', () => {
   it('declares pages that all have js, wxml, and wxss files', () => {
@@ -28,5 +44,9 @@ describe('wechat miniprogram structure', () => {
 
     expect(projectConfig.appid).toBe('wx45368fc509491335');
     expect(projectConfig.compileType).toBe('miniprogram');
+  });
+
+  it('keeps preview source size under the WeChat 2MB limit', () => {
+    expect(sumFileBytes(miniRoot)).toBeLessThan(PREVIEW_SOURCE_LIMIT_BYTES);
   });
 });

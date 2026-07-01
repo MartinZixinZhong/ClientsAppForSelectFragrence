@@ -1,0 +1,92 @@
+.cart-screen {
+  padding-bottom: 60rpx;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18rpx;
+  padding: 18rpx 0 28rpx;
+}
+
+.brand-logo {
+  width: 84rpx;
+  height: 84rpx;
+  padding: 6rpx;
+  background: #fff;
+  border: 1rpx solid #ebe5d8;
+  border-radius: 12rpx;
+}
+
+.brand-name,
+.brand-subtitle,
+.cart-title,
+.cart-line,
+.group-title,
+.notice {
+  display: block;
+}
+
+.brand-name {
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.brand-subtitle {
+  margin-top: 6rpx;
+  color: #716a5d;
+  font-size: 24rpx;
+}
+
+.cart-card {
+  padding: 30rpx;
+}
+
+.cart-title {
+  margin: 12rpx 0 24rpx;
+  font-size: 46rpx;
+  font-weight: 950;
+}
+
+.cart-line {
+  margin-top: 14rpx;
+  color: #4f473e;
+  font-size: 28rpx;
+  line-height: 1.55;
+}
+
+.item-group {
+  margin-top: 26rpx;
+}
+
+.group-title {
+  margin-bottom: 8rpx;
+  color: #a57b36;
+  font-size: 24rpx;
+  font-weight: 900;
+}
+
+.gift-line {
+  margin-top: 26rpx;
+  padding: 22rpx;
+  color: #5e4512;
+  background: #fff8e6;
+  border: 1rpx solid #d6b56f;
+  border-radius: 14rpx;
+  font-size: 28rpx;
+  font-weight: 900;
+  line-height: 1.55;
+}
+
+.notice {
+  margin-top: 24rpx;
+  color: #7b7165;
+  font-size: 24rpx;
+  line-height: 1.65;
+}
+
+.action-list {
+  display: grid;
+  gap: 16rpx;
+  margin-top: 30rpx;
+}

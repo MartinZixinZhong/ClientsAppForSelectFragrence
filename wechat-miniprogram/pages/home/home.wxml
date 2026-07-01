@@ -1,0 +1,65 @@
+<view class="screen home-screen">
+  <view wx:if="{{promotion && promotion.enabled && showPromo}}" class="promo-mask">
+    <view class="promo-card">
+      <text class="eyebrow">PROMOTION</text>
+      <text class="promo-title">{{promotion.title}}</text>
+      <text class="promo-body">{{promotion.body}}</text>
+      <button class="primary-button" bindtap="closePromo">{{promotion.buttonText}}</button>
+    </view>
+  </view>
+
+  <view class="brand">
+    <image class="brand-logo" src="/assets/images/glassmartin-logo.jpg" mode="aspectFit" />
+    <view>
+      <text class="brand-name">{{brandName}}</text>
+      <text class="brand-subtitle">{{brandSubtitle}}</text>
+    </view>
+  </view>
+
+  <view class="hero">
+    <text class="eyebrow">AROMA SERVICE</text>
+    <text class="hero-title">商业空间香氛选型</text>
+    <text class="hero-copy">选择商业场景、香型用量和扩香机型号，生成参考采购清单。</text>
+  </view>
+
+  <swiper wx:if="{{banners.length}}" class="banner-swiper" indicator-dots autoplay circular>
+    <swiper-item wx:for="{{banners}}" wx:key="id">
+      <view class="banner-card" data-id="{{item.id}}" bindtap="tapBanner">
+        <image src="{{item.image}}" mode="aspectFill" />
+        <view class="banner-overlay">
+          <text class="banner-title">{{item.title}}</text>
+          <text class="banner-subtitle">{{item.subtitle}}</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <view class="section">
+    <view class="section-heading">
+      <text class="eyebrow">SCENARIOS</text>
+      <text class="section-title">选择你的商业场景</text>
+    </view>
+    <view class="scenario-list">
+      <view wx:for="{{scenarios}}" wx:key="id" class="scenario-card card" data-id="{{item.id}}" bindtap="selectScenario">
+        <text class="scenario-name">{{item.name}}</text>
+        <text class="scenario-subtitle">{{item.subtitle}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-heading">
+      <text class="eyebrow">POPULAR</text>
+      <text class="section-title">热门标准方案</text>
+    </view>
+    <view class="package-list">
+      <view wx:for="{{packages}}" wx:key="id" class="package-card card">
+        <text class="package-title">{{item.name}}</text>
+        <text class="package-desc">{{item.description}}</text>
+        <button class="secondary-button" data-id="{{item.id}}" bindtap="addPackage">加入采购清单</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<button class="floating-cart" bindtap="openCart">采购清单 {{cartCount}}</button>

@@ -1,0 +1,175 @@
+.scenario-screen {
+  padding-bottom: 140rpx;
+}
+
+.back-link {
+  margin: 8rpx 0 20rpx;
+  padding: 0;
+  color: #6b4b16;
+  background: transparent;
+  text-align: left;
+  font-size: 26rpx;
+}
+
+.scenario-hero {
+  padding: 12rpx 0 26rpx;
+}
+
+.scenario-title,
+.scenario-subtitle,
+.section-title,
+.product-title,
+.product-desc,
+.tone-note,
+.price-text,
+.notice {
+  display: block;
+}
+
+.scenario-title {
+  margin-top: 10rpx;
+  font-size: 58rpx;
+  font-weight: 950;
+  line-height: 1.08;
+}
+
+.scenario-subtitle {
+  margin-top: 12rpx;
+  color: #6b6256;
+  font-size: 28rpx;
+}
+
+.tab-bar {
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rpx;
+  margin: 12rpx 0 28rpx;
+  padding: 8rpx;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1rpx solid #e0d5c3;
+  border-radius: 16rpx;
+  box-shadow: 0 14rpx 36rpx rgba(32, 29, 24, 0.08);
+}
+
+.tab-bar button {
+  min-height: 82rpx;
+  color: #6c6257;
+  background: transparent;
+  font-size: 26rpx;
+}
+
+.tab-bar button.active {
+  color: #fff;
+  background: #171717;
+}
+
+.section-heading {
+  margin: 16rpx 0 18rpx;
+}
+
+.section-title {
+  margin-top: 6rpx;
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.product-list,
+.machine-list {
+  display: grid;
+  gap: 18rpx;
+}
+
+.product-card,
+.machine-card {
+  padding: 26rpx;
+}
+
+.card-top {
+  display: flex;
+  gap: 10rpx;
+  margin-bottom: 14rpx;
+}
+
+.pill.muted {
+  color: #70695e;
+  background: #f5f2ec;
+}
+
+.product-title {
+  font-size: 32rpx;
+  font-weight: 950;
+  line-height: 1.35;
+}
+
+.product-desc,
+.tone-note,
+.price-text {
+  margin-top: 14rpx;
+  color: #6c6358;
+  font-size: 26rpx;
+  line-height: 1.58;
+}
+
+.price-text {
+  color: #5d5348;
+  background: #f7f1e6;
+  border-radius: 10rpx;
+  padding: 14rpx;
+}
+
+.field {
+  display: grid;
+  gap: 10rpx;
+  margin-top: 18rpx;
+  color: #4e463d;
+  font-size: 26rpx;
+  font-weight: 800;
+}
+
+.field input {
+  min-height: 82rpx;
+  padding: 0 18rpx;
+  background: #fff;
+  border: 1rpx solid #d8cebd;
+  border-radius: 14rpx;
+}
+
+.machine-card {
+  display: grid;
+  grid-template-columns: 180rpx 1fr;
+  gap: 22rpx;
+}
+
+.machine-card image {
+  width: 180rpx;
+  height: 180rpx;
+  padding: 12rpx;
+  background: #fff;
+  border: 1rpx solid #eee6d9;
+  border-radius: 14rpx;
+}
+
+.machine-card .field {
+  grid-column: 1 / -1;
+}
+
+.notice {
+  margin: 28rpx 0 0;
+  color: #7b7165;
+  font-size: 24rpx;
+  line-height: 1.6;
+}
+
+.floating-cart {
+  position: fixed;
+  right: 28rpx;
+  bottom: 36rpx;
+  z-index: 20;
+  min-width: 210rpx;
+  color: #fff;
+  background: #171717;
+  box-shadow: 0 16rpx 38rpx rgba(23, 23, 23, 0.26);
+}

@@ -1,0 +1,42 @@
+<view class="screen cart-screen">
+  <view class="brand">
+    <image class="brand-logo" src="/assets/images/glassmartin-logo.jpg" mode="aspectFit" />
+    <view>
+      <text class="brand-name">GlassMartin</text>
+      <text class="brand-subtitle">澳洲品牌 · 空间香氛服务</text>
+    </view>
+  </view>
+
+  <view class="cart-card card">
+    <text class="eyebrow">INQUIRY LIST</text>
+    <text class="cart-title">采购清单</text>
+    <text class="cart-line">使用场景：{{summary.scenario ? summary.scenario.name : '未选择'}}</text>
+    <text class="cart-line">精油总升数：{{summary.totalOilLiters}}L</text>
+
+    <view wx:if="{{summary.scentItems.length}}" class="item-group">
+      <text class="group-title">已选精油</text>
+      <text wx:for="{{summary.scentItems}}" wx:key="index" class="cart-line">
+        {{item.scent.name}} × {{item.liters}}L
+      </text>
+    </view>
+
+    <view wx:if="{{summary.machineItems.length}}" class="item-group">
+      <text class="group-title">已选扩香机</text>
+      <text wx:for="{{summary.machineItems}}" wx:key="index" class="cart-line">
+        {{item.machine.name}} × {{item.quantity}} 台
+      </text>
+    </view>
+
+    <view wx:if="{{summary.giftMachine && summary.giftMachineCount > 0}}" class="gift-line">
+      <text>满赠扩香机：{{summary.giftMachine.name}} × {{summary.giftMachineCount}} 台</text>
+    </view>
+
+    <text class="notice">{{finalQuoteNotice}}</text>
+
+    <view class="action-list">
+      <button class="primary-button" bindtap="copyInquiryText">复制询价文本</button>
+      <button class="danger-button" bindtap="clearPurchaseCart" disabled="{{cartCount === 0}}">清空采购清单</button>
+      <button class="secondary-button" bindtap="goHome">返回首页重新选择</button>
+    </view>
+  </view>
+</view>

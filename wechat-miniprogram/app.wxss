@@ -1,0 +1,80 @@
+page {
+  background: #f7f5ef;
+  color: #171717;
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif;
+}
+
+view,
+text,
+button,
+input,
+image {
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 8rpx;
+  font-weight: 800;
+}
+
+.screen {
+  padding: 28rpx;
+}
+
+.eyebrow {
+  color: #a57b36;
+  font-size: 22rpx;
+  font-weight: 800;
+  letter-spacing: 2rpx;
+  text-transform: uppercase;
+}
+
+.primary-button {
+  min-height: 84rpx;
+  color: #fff;
+  background: #171717;
+}
+
+.secondary-button {
+  min-height: 84rpx;
+  color: #6b4b16;
+  background: #fff9ed;
+  border: 1rpx solid #c9b38b;
+}
+
+.danger-button {
+  min-height: 84rpx;
+  color: #8b2f1c;
+  background: #fff4f1;
+  border: 1rpx solid #d9b4a8;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1rpx solid #e5dccd;
+  border-radius: 16rpx;
+  box-shadow: 0 14rpx 44rpx rgba(32, 29, 24, 0.08);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 42rpx;
+  padding: 0 18rpx;
+  border-radius: 999rpx;
+  color: #8a642b;
+  background: #f2eadb;
+  font-size: 22rpx;
+  font-weight: 800;
+}
+
+.gift-reminder {
+  margin: 18rpx 0;
+  padding: 20rpx;
+  border: 1rpx solid #d2ad62;
+  border-radius: 14rpx;
+  color: #65460c;
+  background: linear-gradient(135deg, #fff7df, #f3e3bd);
+  font-weight: 900;
+}

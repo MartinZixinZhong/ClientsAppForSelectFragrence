@@ -1,0 +1,197 @@
+.home-screen {
+  padding-bottom: 140rpx;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18rpx;
+  padding: 18rpx 0 8rpx;
+}
+
+.brand-logo {
+  width: 84rpx;
+  height: 84rpx;
+  padding: 6rpx;
+  background: #fff;
+  border: 1rpx solid #ebe5d8;
+  border-radius: 12rpx;
+}
+
+.brand-name,
+.brand-subtitle,
+.hero-title,
+.hero-copy,
+.section-title,
+.scenario-name,
+.scenario-subtitle,
+.package-title,
+.package-desc {
+  display: block;
+}
+
+.brand-name {
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.brand-subtitle {
+  margin-top: 6rpx;
+  color: #716a5d;
+  font-size: 24rpx;
+}
+
+.hero {
+  padding: 38rpx 0 24rpx;
+}
+
+.hero-title {
+  margin-top: 10rpx;
+  font-size: 62rpx;
+  font-weight: 950;
+  line-height: 1.05;
+}
+
+.hero-copy {
+  margin-top: 16rpx;
+  color: #6b6256;
+  font-size: 28rpx;
+  line-height: 1.7;
+}
+
+.banner-swiper {
+  height: 300rpx;
+  margin: 12rpx 0 34rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+
+.banner-card {
+  position: relative;
+  height: 300rpx;
+  overflow: hidden;
+  background: #111;
+}
+
+.banner-card image {
+  width: 100%;
+  height: 100%;
+  opacity: 0.78;
+}
+
+.banner-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 90rpx 26rpx 28rpx;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.82));
+}
+
+.banner-title,
+.banner-subtitle {
+  display: block;
+}
+
+.banner-title {
+  max-width: 520rpx;
+  font-size: 36rpx;
+  font-weight: 900;
+}
+
+.banner-subtitle {
+  margin-top: 10rpx;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 25rpx;
+}
+
+.section {
+  margin-top: 34rpx;
+}
+
+.section-heading {
+  margin-bottom: 18rpx;
+}
+
+.section-title {
+  margin-top: 6rpx;
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.scenario-list,
+.package-list {
+  display: grid;
+  gap: 18rpx;
+}
+
+.scenario-card,
+.package-card {
+  padding: 28rpx;
+}
+
+.scenario-name,
+.package-title {
+  font-size: 31rpx;
+  font-weight: 900;
+}
+
+.scenario-subtitle,
+.package-desc {
+  margin-top: 12rpx;
+  color: #756c5f;
+  font-size: 26rpx;
+  line-height: 1.55;
+}
+
+.package-card button {
+  margin-top: 22rpx;
+}
+
+.floating-cart {
+  position: fixed;
+  right: 28rpx;
+  bottom: 36rpx;
+  z-index: 20;
+  min-width: 210rpx;
+  color: #fff;
+  background: #171717;
+  box-shadow: 0 16rpx 38rpx rgba(23, 23, 23, 0.26);
+}
+
+.promo-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36rpx;
+  background: rgba(15, 15, 15, 0.58);
+}
+
+.promo-card {
+  width: 100%;
+  padding: 34rpx;
+  background: #fff;
+  border-radius: 16rpx;
+}
+
+.promo-title,
+.promo-body {
+  display: block;
+}
+
+.promo-title {
+  margin-top: 12rpx;
+  font-size: 42rpx;
+  font-weight: 900;
+}
+
+.promo-body {
+  margin: 18rpx 0 26rpx;
+  color: #5f5549;
+  font-size: 27rpx;
+  line-height: 1.7;
+}

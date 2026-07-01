@@ -1,0 +1,60 @@
+<view class="screen scenario-screen">
+  <button class="back-link" bindtap="backHome">返回首页</button>
+
+  <view class="scenario-hero">
+    <text class="eyebrow">SCENARIO RECOMMENDATION</text>
+    <text class="scenario-title">{{scenario.name}}</text>
+    <text class="scenario-subtitle">{{scenario.subtitle}}</text>
+  </view>
+
+  <view class="tab-bar">
+    <button class="{{activeTab === 'scents' ? 'active' : ''}}" data-tab="scents" bindtap="switchTab">选择香型和用量</button>
+    <button class="{{activeTab === 'machines' ? 'active' : ''}}" data-tab="machines" bindtap="switchTab">查看香薰扩香机</button>
+  </view>
+
+  <view wx:if="{{activeTab === 'scents'}}" class="product-list">
+    <view class="section-heading">
+      <text class="eyebrow">RECOMMENDED SCENTS</text>
+      <text class="section-title">推荐 / 常备香型</text>
+    </view>
+    <view wx:for="{{scents}}" wx:key="id" class="product-card card">
+      <view class="card-top">
+        <text wx:if="{{item.isRecommended}}" class="pill">常备推荐</text>
+        <text wx:if="{{item.isInquiryOnly}}" class="pill muted">更多可询</text>
+      </view>
+      <text class="product-title">{{item.name}}</text>
+      <text class="product-desc">{{item.description}}</text>
+      <text class="tone-note">{{item.toneNote}}</text>
+      <text wx:if="{{item.priceTierText}}" class="price-text">{{item.priceTierText}}</text>
+      <view class="gift-reminder">每满3L香薰精油赠送高端扩香机一台</view>
+      <view class="field">
+        <text>采购升数</text>
+        <input type="digit" value="{{item.liters}}" data-id="{{item.id}}" bindinput="changeScentLiters" placeholder="0" />
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{activeTab === 'machines'}}" class="machine-list">
+    <view class="section-heading">
+      <text class="eyebrow">AROMA DIFFUSERS</text>
+      <text class="section-title">香薰扩香机型号</text>
+    </view>
+    <view wx:for="{{machines}}" wx:key="id" class="machine-card card">
+      <image src="{{item.image}}" mode="aspectFit" />
+      <view class="machine-content">
+        <text wx:if="{{item.isRecommended}}" class="pill">推荐机型</text>
+        <text class="product-title">{{item.name}}</text>
+        <text class="product-desc">{{item.coverageText}}</text>
+        <text class="tone-note">{{item.sellingPointText}}</text>
+      </view>
+      <view class="field">
+        <text>采购数量</text>
+        <input type="number" value="{{item.quantity}}" data-id="{{item.id}}" bindinput="changeMachineQuantity" placeholder="0" />
+      </view>
+    </view>
+  </view>
+
+  <text class="notice">{{finalQuoteNotice}}</text>
+</view>
+
+<button class="floating-cart" bindtap="openCart">采购清单 {{cartCount}}</button>

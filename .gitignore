@@ -8,3 +8,5 @@ vite.config.js
 vite.config.d.ts
 
 .vercel
+wechat-miniprogram/project.private.config.json
+wechat-miniprogram/miniprogram_npm

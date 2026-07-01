@@ -1,0 +1,15 @@
+{
+  "description": "GlassMartin 空间香氛服务客户选型小程序",
+  "appid": "touristappid",
+  "projectname": "GlassMartin空间香氛服务",
+  "miniprogramRoot": "./",
+  "compileType": "miniprogram",
+  "libVersion": "latest",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true
+  }
+}

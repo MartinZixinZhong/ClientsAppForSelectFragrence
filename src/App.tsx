@@ -14,7 +14,7 @@ export function App() {
   const [showPromo, setShowPromo] = useState(true);
   const [showCart, setShowCart] = useState(false);
   const [isHome, setIsHome] = useState(true);
-  const { cart, setScenario, setScentLiters, setMachineQuantity } = useQuoteCart();
+  const { cart, setScenario, setScentLiters, setMachineQuantity, clearCart } = useQuoteCart();
 
   useEffect(() => {
     loadCatalog()
@@ -78,7 +78,9 @@ export function App() {
           }}
         />
       )}
-      {showCart ? <QuoteCart cart={cart} catalog={catalog} onClose={() => setShowCart(false)} /> : null}
+      {showCart ? (
+        <QuoteCart cart={cart} catalog={catalog} onClose={() => setShowCart(false)} onClear={clearCart} />
+      ) : null}
     </>
   );
 }

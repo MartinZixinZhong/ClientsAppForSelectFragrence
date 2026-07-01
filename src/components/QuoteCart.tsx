@@ -8,6 +8,7 @@ interface QuoteCartProps {
   cart: QuoteCartState;
   catalog: Catalog;
   onClose: () => void;
+  onClear: () => void;
 }
 
 async function waitForImagesToSettle(container: HTMLElement, timeoutMs = 300) {
@@ -45,7 +46,7 @@ async function createCaptureNode(source: HTMLElement) {
   return captureNode;
 }
 
-export function QuoteCart({ cart, catalog, onClose }: QuoteCartProps) {
+export function QuoteCart({ cart, catalog, onClose, onClear }: QuoteCartProps) {
   const imageRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState(false);
   const summary = buildQuoteSummary(cart, catalog);
@@ -71,6 +72,15 @@ export function QuoteCart({ cart, catalog, onClose }: QuoteCartProps) {
     } finally {
       captureNode.remove();
     }
+  }
+
+  function clearPurchaseList() {
+    if (!window.confirm('确定要清空当前采购清单吗？')) {
+      return;
+    }
+
+    onClear();
+    onClose();
   }
 
   return (
@@ -104,6 +114,9 @@ export function QuoteCart({ cart, catalog, onClose }: QuoteCartProps) {
           </button>
           <button className="secondary-button" type="button" onClick={saveImage}>
             生成图片
+          </button>
+          <button className="clear-cart-button" type="button" onClick={clearPurchaseList}>
+            清空采购清单
           </button>
         </div>
         <div className="quote-image-hidden" ref={imageRef}>

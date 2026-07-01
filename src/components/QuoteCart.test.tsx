@@ -69,7 +69,7 @@ describe('QuoteCart', () => {
       machines: [],
     };
 
-    const { container } = render(<QuoteCart cart={cart} catalog={catalog} onClose={vi.fn()} />);
+    const { container } = render(<QuoteCart cart={cart} catalog={catalog} onClose={vi.fn()} onClear={vi.fn()} />);
 
     expect(container.querySelector('.gift-line')).toHaveTextContent('满赠扩香机：GAS-501F 插电蓝牙 APP 款 × 2 台');
   });
@@ -81,7 +81,7 @@ describe('QuoteCart', () => {
       machines: [],
     };
 
-    render(<QuoteCart cart={cart} catalog={catalog} onClose={vi.fn()} />);
+    render(<QuoteCart cart={cart} catalog={catalog} onClose={vi.fn()} onClear={vi.fn()} />);
 
     await userEvent.click(screen.getByRole('button', { name: '生成图片' }));
 
@@ -92,5 +92,24 @@ describe('QuoteCart', () => {
     expect(capturedNode).not.toHaveClass('quote-image-hidden');
     expect(capturedNode.textContent).toContain('空间香氛服务询价清单');
     expect(document.querySelector('.quote-image-capture-stage')).not.toBeInTheDocument();
+  });
+
+  it('confirms before clearing the purchase list', async () => {
+    const onClear = vi.fn();
+    const onClose = vi.fn();
+    const cart: QuoteCartState = {
+      scenarioId: 'hotel',
+      scents: [{ scentId: 'white-tea-hotel', liters: 3 }],
+      machines: [{ machineId: 'gas-501f', quantity: 1 }],
+    };
+    vi.spyOn(window, 'confirm').mockReturnValue(true);
+
+    render(<QuoteCart cart={cart} catalog={catalog} onClose={onClose} onClear={onClear} />);
+
+    await userEvent.click(screen.getByRole('button', { name: '清空采购清单' }));
+
+    expect(window.confirm).toHaveBeenCalledWith('确定要清空当前采购清单吗？');
+    expect(onClear).toHaveBeenCalledTimes(1);
+    expect(onClose).toHaveBeenCalledTimes(1);
   });
 });

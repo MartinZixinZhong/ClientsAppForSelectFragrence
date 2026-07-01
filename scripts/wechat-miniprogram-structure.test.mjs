@@ -23,10 +23,10 @@ describe('wechat miniprogram structure', () => {
     expect(fs.existsSync(path.join(miniRoot, 'assets/images/machines/gas-501f.jpg'))).toBe(true);
   });
 
-  it('keeps the project importable before the official AppID is known', () => {
+  it('uses the official miniprogram AppID', () => {
     const projectConfig = JSON.parse(fs.readFileSync(path.join(miniRoot, 'project.config.json'), 'utf8'));
 
-    expect(projectConfig.appid).toBe('touristappid');
+    expect(projectConfig.appid).toBe('wx45368fc509491335');
     expect(projectConfig.compileType).toBe('miniprogram');
   });
 });

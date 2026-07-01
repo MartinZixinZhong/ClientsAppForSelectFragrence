@@ -7,7 +7,7 @@
 1. 打开微信开发者工具。
 2. 选择“导入项目”。
 3. 项目目录选择：`F:\Codex-客户端香型选择以及展示价格\wechat-miniprogram`
-4. 当前 `project.config.json` 使用临时 `touristappid`。拿到正式小程序 AppID 后，把 `project.config.json` 里的 `appid` 替换为你的真实 AppID。
+4. 当前 `project.config.json` 已配置小程序 AppID：`wx45368fc509491335`。
 5. 在开发者工具里预览、真机调试、上传代码。
 
 ## 后期修改数据
@@ -49,4 +49,4 @@ npm.cmd run wechat:sync
 
 ## 发布提醒
 
-正式发布前需要在微信公众平台完成小程序创建、AppID 配置、类目选择、代码上传和提交审核。
+正式发布前需要在微信公众平台完成类目选择、代码上传和提交审核。

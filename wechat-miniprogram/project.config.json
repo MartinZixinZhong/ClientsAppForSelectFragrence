@@ -4,7 +4,7 @@
   "projectname": "GlassMartin空间香氛服务",
   "miniprogramRoot": "./",
   "compileType": "miniprogram",
-  "libVersion": "latest",
+  "libVersion": "3.15.2",
   "setting": {
     "urlCheck": false,
     "es6": true,

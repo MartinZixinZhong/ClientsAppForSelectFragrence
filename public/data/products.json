@@ -1107,33 +1107,6 @@
       "isGiftMachine": false
     },
     {
-      "id": "gas-501f",
-      "model": "GAS-501F",
-      "name": "GAS-501F 插电蓝牙 WiFi 4G 款",
-      "image": "/images/machines/gas-501f.jpg",
-      "coverageText": "300-500m³（带风扇）",
-      "sellingPoints": [
-        "400mL容量",
-        "PP塑料机身",
-        "8W功率",
-        "DC 12V",
-        "噪音＜42dba",
-        "平放/挂壁安装",
-        "按键/蓝牙/WiFi/4G控制"
-      ],
-      "scenarioIds": [
-        "hotel",
-        "entertainment",
-        "wellness",
-        "showroom",
-        "office",
-        "retail",
-        "deodorizing"
-      ],
-      "isRecommended": true,
-      "isGiftMachine": true
-    },
-    {
       "id": "hz-1201",
       "model": "HZ-1201",
       "name": "HZ-1201 立式智能遥控款",
@@ -1159,6 +1132,33 @@
       ],
       "isRecommended": true,
       "isGiftMachine": false
+    },
+    {
+      "id": "gas-501f",
+      "model": "GAS-501F",
+      "name": "GAS-501F 插电蓝牙 WiFi 4G 款",
+      "image": "/images/machines/gas-501f.jpg",
+      "coverageText": "300-500m³（带风扇）",
+      "sellingPoints": [
+        "400mL容量",
+        "PP塑料机身",
+        "8W功率",
+        "DC 12V",
+        "噪音＜42dba",
+        "平放/挂壁安装",
+        "按键/蓝牙/WiFi/4G控制"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": true
     },
     {
       "id": "gas-201f",
@@ -1188,6 +1188,36 @@
       "isGiftMachine": false
     },
     {
+      "id": "s-3000c",
+      "model": "S-3000C",
+      "name": "S-3000C 平放挂壁外接款",
+      "image": "/images/machines/s-3000c.jpg",
+      "coverageText": "1500-5000m³",
+      "sellingPoints": [
+        "800mL容量",
+        "PP材质",
+        "17W功率",
+        "DC12V",
+        "噪音＜38dba",
+        "2kg重量",
+        "255*222*108mm",
+        "俊雅黑/梨花白",
+        "平放/挂壁/外接安装",
+        "常规款/蓝牙款"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
+    },
+    {
       "id": "gam-1001f",
       "model": "GAM-1001F",
       "name": "GAM-1001F 中区域外接蓝牙款",
@@ -1201,6 +1231,36 @@
         "噪音＜42dba",
         "平放/外接安装",
         "触控按键/蓝牙控制"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
+    },
+    {
+      "id": "s-3000",
+      "model": "S-3000",
+      "name": "S-3000 平放挂壁外接款",
+      "image": "/images/machines/s-3000.jpg",
+      "coverageText": "3000m³",
+      "sellingPoints": [
+        "800mL容量",
+        "金属机身",
+        "14W功率",
+        "DC12V",
+        "噪音＜42dba",
+        "3.9kg重量",
+        "284*125*246mm",
+        "黑底白面盖/白底黑面盖",
+        "平放/挂壁/外接安装",
+        "智能PCB"
       ],
       "scenarioIds": [
         "hotel",
@@ -1255,6 +1315,61 @@
         "噪音＜45dba",
         "平放/挂壁/外接安装",
         "触控按键/蓝牙/WiFi控制"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
+    },
+    {
+      "id": "gal-8000h-detail",
+      "model": "GAL-8000H",
+      "name": "GAL-8000H 大区域触控 APP 款",
+      "image": "/images/machines/gal-8000h-detail.jpg",
+      "coverageText": "8000-10000m³",
+      "sellingPoints": [
+        "2000mL容量",
+        "金属机身",
+        "26W功率",
+        "AC110V/220V",
+        "4.25kg重量",
+        "W260*D166*H200mm",
+        "黑色/白色",
+        "平放/壁挂/外接安装",
+        "触控按键/APP"
+      ],
+      "scenarioIds": [
+        "hotel",
+        "entertainment",
+        "wellness",
+        "showroom",
+        "office",
+        "retail",
+        "deodorizing"
+      ],
+      "isRecommended": true,
+      "isGiftMachine": false
+    },
+    {
+      "id": "gal-8001h",
+      "model": "GAL-8001H",
+      "name": "GAL-8001H 分体式扩香机",
+      "image": "/images/machines/gal-8001h.jpg",
+      "coverageText": "8000-10000m³",
+      "sellingPoints": [
+        "2000mL精油容量",
+        "60W功率",
+        "AC110V-220V",
+        "噪音＜46dba",
+        "W260*D187*H227mm",
+        "黑色/白色"
       ],
       "scenarioIds": [
         "hotel",
